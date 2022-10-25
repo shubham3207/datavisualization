@@ -11,7 +11,7 @@ with open("bargraph.csv", "r") as csvfile:
    for row in plots:
        x.append(row[0])
        y.append(int(row[1]))
-   plt.bar(x, y, color='blue', label="red")
+   plt.scatter(x, y, color='blue', label="red")
    plt.xlabel('Years')
    plt.ylabel('Temperatures')
    plt.title("bar graphs for temperature in different years")
